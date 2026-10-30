@@ -1,0 +1,87 @@
+# The house's gallery index (Tyto ADR 0162). `tyto gallery list --index <this repository>`
+# reads this file at the default branch; each entry's `latest` is the tag install pins and
+# update moves to. How an entry is added or bumped: CONTRIBUTING.md.
+version: 1
+entries:
+  - id: tabela
+    kind: template
+    name: Table
+    description: A table in one 1080×1350 image, a title over the whole table, sized so every row fits.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-tabela.git }
+    latest: v1.1.1
+    templates: [tabela]
+    configurations: [roxo]
+    preview: previews/tabela.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34, which centres the tracked title, header cells and signature by their ink. The table is unchanged.
+
+  - id: agenda-semana
+    kind: template
+    name: Weekly agenda
+    description: The week's classes as a carousel — a cover on the first slide, several disciplines to a slide.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-agenda-semana.git }
+    latest: v1.1.0
+    templates: [agenda-semana]
+    preview: previews/agenda-semana.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34, which centres the footer signature by its ink.
+
+  - id: aprovados
+    kind: template
+    name: Approved list
+    description: An exam's approved list as a carousel — the exam's name on the first slide, the approved grouped by specialty.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-aprovados.git }
+    latest: v1.1.0
+    templates: [aprovados]
+    preview: previews/aprovados.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34, which centres the footer signature by its ink.
+
+  - id: simulados-semana
+    kind: template
+    name: Weekly mock exams
+    description: The week's mock exams as a carousel and as stories — the title, then each day's schedule and its exams.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-simulados-semana.git }
+    latest: v1.0.1
+    templates: [simulados-semana]
+    configurations: [roxo, ocre, vinho]
+    preview: previews/simulados-semana.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34. The art is unchanged; the manifest's version now matches the tag.
+
+  - id: concursos-abertos
+    kind: template
+    name: Open exams
+    description: The week's open exams as a 1080×1350 carousel — a cover, one slide per exam with its facts on a card, and a back cover.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-concursos-abertos.git }
+    latest: v0.2.4
+    templates: [concursos-abertos]
+    preview: previews/concursos-abertos.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34; the cover's tracked words sit at the slide's centre. The signature draws as before.
+
+  - id: questao-estrategica
+    kind: template
+    name: Exam question
+    description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
+    latest: v0.3.0
+    templates: [questao-estrategica]
+    preview: previews/questao-estrategica.png
+    engine: '>=0.11'
+    changes: Moves onto Tyto core 0.34; a slide's picture frame takes the picture's own shape, held between 3:1 and square.
+
+  # Until the desktop release after desktop-v0.12.0, Tyto still ships a built-in banner-roxo:
+  # installing this entry with the configuration alias banner-roxo collides with it (ADR 0151
+  # decision 7). The bare name `banner` does not.
+  - id: banner
+    kind: template
+    name: Product banner
+    description: A product banner — one text over a fixed background, in three sizes.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-banner.git }
+    latest: v1.0.0
+    templates: [banner]
+    configurations: [roxo]
+    preview: previews/banner.png
+    engine: '>=0.11'
+    changes: First release, the built-in banner-roxo in its own repository with the same composition and backgrounds.

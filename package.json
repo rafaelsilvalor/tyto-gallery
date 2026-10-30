@@ -1,0 +1,16 @@
+{
+  "name": "tyto-gallery",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "The house's gallery index for Tyto (Tyto ADR 0162).",
+  "engines": {
+    "node": "^22.22.2 || ^24.15 || >=26"
+  },
+  "scripts": {
+    "check": "node scripts/check-index.mjs"
+  },
+  "dependencies": {
+    "@tyto/plugin-api": "npm:@rafaelsilvalor/tyto-plugin-api@^0.12.0"
+  }
+}

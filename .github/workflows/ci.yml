@@ -1,0 +1,31 @@
+name: ci
+on:
+  pull_request:
+  push: { branches: [main] }
+  # Weekly as well: a tag removed upstream breaks the index without a commit here.
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+concurrency: { group: 'ci-${{ github.ref }}', cancel-in-progress: true }
+# The index parser (`@tyto/plugin-api`) is read from GitHub Packages with the workflow's own token.
+permissions:
+  contents: read
+  packages: read
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        # Writes the scope and `${NODE_AUTH_TOKEN}` into a user-level .npmrc, which npm reads.
+        with:
+          node-version: 24
+          registry-url: https://npm.pkg.github.com
+          scope: '@rafaelsilvalor'
+      # No lockfile: the check should read the index with the newest parser the range admits,
+      # the one a person's Tyto of that line reads it with.
+      - run: npm install --no-package-lock --no-audit --no-fund
+      - run: npm ls @tyto/plugin-api
+      - run: npm run check

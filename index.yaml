@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.3.0
+    latest: v0.4.0
     templates: [questao-estrategica]
     preview: previews/questao-estrategica.png
-    engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34; a slide's picture frame takes the picture's own shape, held between 3:1 and square.
+    engine: '>=0.13'
+    changes: The statement and answer slides keep the reference's gaps in proportion and centred, no paragraph ends on a lone word, and a configuration can give the cover its background picture.
 
   # Until the desktop release after desktop-v0.12.0, Tyto still ships a built-in banner-roxo:
   # installing this entry with the configuration alias banner-roxo collides with it (ADR 0151

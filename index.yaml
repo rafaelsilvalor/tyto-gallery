@@ -71,6 +71,17 @@ entries:
     engine: '>=0.13'
     changes: An option may break its line with a backslash or a new line without failing the render, and a lone last word is cleared by breaking the line above one word earlier.
 
+  - id: news-da-semana
+    kind: template
+    name: News of the week
+    description: The week's news as a 1080×1350 carousel — "News da semana" and the logo on the left, each slide's news on the right, a bold label before each item.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-news-da-semana.git }
+    latest: v0.2.0
+    templates: [news-da-semana]
+    preview: previews/news-da-semana.png
+    engine: '>=0.13'
+    changes: First release. The last slide carries the house's seal when the brief names one.
+
   # Until the desktop release after desktop-v0.12.0, Tyto still ships a built-in banner-roxo:
   # installing this entry with the configuration alias banner-roxo collides with it (ADR 0151
   # decision 7). The bare name `banner` does not.

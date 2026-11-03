@@ -74,13 +74,13 @@ entries:
   - id: news-da-semana
     kind: template
     name: News of the week
-    description: The week's news as a 1080×1350 carousel — "News da semana" and the logo on the left, each slide's news on the right, a bold label before each item.
+    description: The week's news as a 1080×1350 carousel — "News da semana" and the logo on the left, each slide's news on the right, a label before each item.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-news-da-semana.git }
-    latest: v0.2.0
+    latest: v0.3.0
     templates: [news-da-semana]
     preview: previews/news-da-semana.png
     engine: '>=0.13'
-    changes: First release. The last slide carries the house's seal when the brief names one.
+    changes: A news item's label is now what comes before the line's first colon, no bold needed, and briefs written the old way draw the same. A price like R$ 9,8 mil no longer splits across lines.
 
   # Until the desktop release after desktop-v0.12.0, Tyto still ships a built-in banner-roxo:
   # installing this entry with the configuration alias banner-roxo collides with it (ADR 0151

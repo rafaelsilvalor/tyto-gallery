@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.4.1
+    latest: v0.5.0
     templates: [questao-estrategica]
     preview: previews/questao-estrategica.png
     engine: '>=0.13'
-    changes: An option may break its line with a backslash or a new line without failing the render, and a lone last word is cleared by breaking the line above one word earlier.
+    changes: "A slide shows any number of pictures, each written as ::imagem ./file.png where it stands among its lines, and the frame casts a real shadow. Briefs written with imagem-1 and {imagem: 1} must move to the new form; they render without their pictures and say why."
 
   - id: news-da-semana
     kind: template

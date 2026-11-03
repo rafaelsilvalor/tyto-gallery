@@ -34,7 +34,7 @@ index; which list a machine trusts is the person's choice.
 | aprovados           | v1.1.0 |                   |
 | simulados-semana    | v1.0.1 | roxo, ocre, vinho |
 | concursos-abertos   | v0.2.4 |                   |
-| questao-estrategica | v0.3.0 |                   |
+| questao-estrategica | v0.5.0 |                   |
 | banner              | v1.0.0 | roxo              |
 
 **`banner` and the built-in `banner-roxo`.** Until the Tyto desktop release after

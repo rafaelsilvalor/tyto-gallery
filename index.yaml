@@ -54,11 +54,11 @@ entries:
     name: Open exams
     description: The week's open exams as a 1080×1350 carousel — a cover, one slide per exam with its facts on a card, and a back cover.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-concursos-abertos.git }
-    latest: v0.2.4
+    latest: v0.2.5
     templates: [concursos-abertos]
     preview: previews/concursos-abertos.png
     engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34; the cover's tracked words sit at the slide's centre. The signature draws as before.
+    changes: Moves onto Tyto core 0.36. The art is unchanged.
 
   - id: questao-estrategica
     kind: template
@@ -82,9 +82,6 @@ entries:
     engine: '>=0.13'
     changes: A news item's label is now what comes before the line's first colon, no bold needed, and briefs written the old way draw the same. A price like R$ 9,8 mil no longer splits across lines.
 
-  # Until the desktop release after desktop-v0.12.0, Tyto still ships a built-in banner-roxo:
-  # installing this entry with the configuration alias banner-roxo collides with it (ADR 0151
-  # decision 7). The bare name `banner` does not.
   - id: banner
     kind: template
     name: Product banner

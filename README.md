@@ -33,15 +33,9 @@ index; which list a machine trusts is the person's choice.
 | agenda-semana       | v1.1.0 |                   |
 | aprovados           | v1.1.0 |                   |
 | simulados-semana    | v1.0.1 | roxo, ocre, vinho |
-| concursos-abertos   | v0.2.4 |                   |
+| concursos-abertos   | v0.2.5 |                   |
 | questao-estrategica | v0.5.0 |                   |
 | banner              | v1.0.0 | roxo              |
-
-**`banner` and the built-in `banner-roxo`.** Until the Tyto desktop release after
-desktop-v0.12.0, Tyto still ships a built-in `banner-roxo`. Installing `banner` writes the bare
-name, which does not collide; a plugin file that also gives it the alias `banner-roxo` (as
-the template's README suggests) does, and two of one name load from neither (Tyto ADR 0151
-decision 7).
 
 No plugin is listed yet.
 

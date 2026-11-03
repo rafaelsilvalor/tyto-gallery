@@ -35,6 +35,7 @@ index; which list a machine trusts is the person's choice.
 | simulados-semana    | v1.0.1 | roxo, ocre, vinho |
 | concursos-abertos   | v0.2.5 |                   |
 | questao-estrategica | v0.5.0 |                   |
+| news-da-semana      | v0.3.0 |                   |
 | banner              | v1.0.0 | roxo              |
 
 No plugin is listed yet.

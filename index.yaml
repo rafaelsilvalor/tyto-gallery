@@ -87,11 +87,11 @@ entries:
     name: Do you know the difference
     description: A "do you know the difference" carousel at 1080×1350 — a cover with the question, explanation slides with coloured highlights and pictures among the lines, and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-voce-conhece.git }
-    latest: v0.4.1
+    latest: v0.5.0
     templates: [voce-conhece]
     preview: previews/voce-conhece.png
     engine: '>=0.14'
-    changes: First listing. A cover's last line never holds a lone word, and a formula never starts a line with a lone operator.
+    changes: "An explanation's {titulo} heading is drawn in the deep colour #204e72 (the new slide-title-color value) instead of the accent, and keeps {cor:azul|vermelho|verde|ocre} highlights in their colours; **x** changes nothing visible there."
 
   - id: banner
     kind: template

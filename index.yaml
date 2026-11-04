@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.5.0
-    templates: [questao-estrategica]
+    latest: v0.7.0
+    templates: [questao-estrategica, questao-engenharia]
     preview: previews/questao-estrategica.png
-    engine: '>=0.13'
-    changes: "A slide shows any number of pictures, each written as ::imagem ./file.png where it stands among its lines, and the frame casts a real shadow. Briefs written with imagem-1 and {imagem: 1} must move to the new form; they render without their pictures and say why."
+    engine: '>=0.14'
+    changes: Adds questao-engenharia, the same question in the engineering frame. Both draw coloured highlights written {cor:azul}…{/} and the math symbols CircularXX lacks (Δ, ∇, ²), and a formula never starts a line with a lone operator.
 
   - id: news-da-semana
     kind: template
@@ -81,6 +81,17 @@ entries:
     preview: previews/news-da-semana.png
     engine: '>=0.13'
     changes: A news item's label is now what comes before the line's first colon, no bold needed, and briefs written the old way draw the same. A price like R$ 9,8 mil no longer splits across lines.
+
+  - id: voce-conhece
+    kind: template
+    name: Do you know the difference
+    description: A "do you know the difference" carousel at 1080×1350 — a cover with the question, explanation slides with coloured highlights and pictures among the lines, and a sign-off.
+    source: { git: https://github.com/rafaelsilvalor/tyto-template-voce-conhece.git }
+    latest: v0.4.1
+    templates: [voce-conhece]
+    preview: previews/voce-conhece.png
+    engine: '>=0.14'
+    changes: First listing. A cover's last line never holds a lone word, and a formula never starts a line with a lone operator.
 
   - id: banner
     kind: template

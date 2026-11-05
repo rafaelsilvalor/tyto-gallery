@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.7.0
+    latest: v0.7.1
     templates: [questao-estrategica, questao-engenharia]
     preview: previews/questao-estrategica.png
     engine: '>=0.14'
-    changes: Adds questao-engenharia, the same question in the engineering frame. Both draw coloured highlights written {cor:azul}…{/} and the math symbols CircularXX lacks (Δ, ∇, ²), and a formula never starts a line with a lone operator.
+    changes: A framed picture's border, bar and rounded corners are one shape, so no light seam shows along the corners in a scaled preview (125 %, 150 %). Exports at 1x change by a few corner pixels.
 
   - id: news-da-semana
     kind: template
@@ -87,11 +87,11 @@ entries:
     name: Do you know the difference
     description: A "do you know the difference" carousel at 1080×1350 — a cover with the question, explanation slides with coloured highlights and pictures among the lines, and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-voce-conhece.git }
-    latest: v0.5.0
+    latest: v0.5.1
     templates: [voce-conhece]
     preview: previews/voce-conhece.png
     engine: '>=0.14'
-    changes: "An explanation's {titulo} heading is drawn in the deep colour #204e72 (the new slide-title-color value) instead of the accent, and keeps {cor:azul|vermelho|verde|ocre} highlights in their colours; **x** changes nothing visible there."
+    changes: A framed picture's border, bar and rounded corners are one shape, so no light seam shows along the corners in a scaled preview (125 %, 150 %). Exports at 1x change by a few corner pixels.
 
   - id: banner
     kind: template

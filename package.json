@@ -8,7 +8,8 @@
     "node": "^22.22.2 || ^24.15 || >=26"
   },
   "scripts": {
-    "check": "node scripts/check-index.mjs"
+    "check": "node scripts/check-index.mjs",
+    "test": "node --test scripts/release-watch.test.mjs"
   },
   "dependencies": {
     "@tyto/plugin-api": "npm:@rafaelsilvalor/tyto-plugin-api@^0.12.0"

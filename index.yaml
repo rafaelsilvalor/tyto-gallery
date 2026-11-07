@@ -87,11 +87,11 @@ entries:
     name: Do you know the difference
     description: A "do you know the difference" carousel at 1080×1350 — a cover with the question, explanation slides with coloured highlights and pictures among the lines, and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-voce-conhece.git }
-    latest: v0.5.1
+    latest: v0.6.0
     templates: [voce-conhece]
     preview: previews/voce-conhece.png
     engine: '>=0.14'
-    changes: A framed picture's border, bar and rounded corners are one shape, so no light seam shows along the corners in a scaled preview (125 %, 150 %). Exports at 1x change by a few corner pixels.
+    changes: Accepts the house seal (selo) on the grid format.
 
   - id: banner
     kind: template

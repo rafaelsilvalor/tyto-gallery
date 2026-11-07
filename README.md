@@ -35,7 +35,7 @@ index; which list a machine trusts is the person's choice.
 | agenda-semana       | v1.1.0 |                   |
 | aprovados           | v1.1.0 |                   |
 | simulados-semana    | v1.0.1 | roxo, ocre, vinho |
-| concursos-abertos   | v0.2.5 |                   |
+| concursos-abertos   | v0.3.0 |                   |
 | questao-estrategica | v0.7.1 |                   |
 | voce-conhece        | v0.5.1 |                   |
 | news-da-semana      | v0.3.0 |                   |

@@ -39,7 +39,7 @@ index; which list a machine trusts is the person's choice.
 | questao-estrategica | v0.7.1 |                   |
 | voce-conhece        | v0.6.0 |                   |
 | news-da-semana      | v0.3.0 |                   |
-| banner              | v1.0.0 | roxo              |
+| banner              | v1.1.0 | roxo              |
 
 No plugin is listed yet.
 

@@ -98,9 +98,9 @@ entries:
     name: Product banner
     description: A product banner — one text over a fixed background, in three sizes.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-banner.git }
-    latest: v1.0.0
+    latest: v1.1.0
     templates: [banner]
     configurations: [roxo]
     preview: previews/banner.png
-    engine: '>=0.11'
-    changes: First release, the built-in banner-roxo in its own repository with the same composition and backgrounds.
+    engine: '>=0.14'
+    changes: Reports a missing background image instead of drawing plain paper.

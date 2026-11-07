@@ -28,4 +28,5 @@ jobs:
       # the one a person's Tyto of that line reads it with.
       - run: npm install --no-package-lock --no-audit --no-fund
       - run: npm ls @tyto/plugin-api
+      - run: npm test
       - run: npm run check

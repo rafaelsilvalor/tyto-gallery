@@ -1,0 +1,34 @@
+name: release-watch
+# Opens, or updates, one pull request per entry whose source has a release tag newer than its
+# `latest` (Tyto TYTO-507). The gallery pulls: a template repository's GITHUB_TOKEN cannot write
+# here, so a push from each of them would need a personal token stored in every one. Tags are
+# read with plain `git ls-remote`, no hosting service's API (Tyto ADR 0127). The curator still
+# merges each pull request (Tyto ADR 0162). How it works: CONTRIBUTING.md.
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+concurrency: { group: release-watch, cancel-in-progress: false }
+permissions:
+  contents: write # push the gallery/bump-<id> branches
+  pull-requests: write # open, edit and close their pull requests
+  actions: write # dispatch ci.yml on each branch, the run that needs no approval (Tyto ADR 0154)
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BASE_BRANCH: ${{ github.event.repository.default_branch }}
+    steps:
+      # The default branch, whatever ref the run was dispatched on: a bump is always against it.
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      # The script imports Node's built-ins only, so nothing is installed.
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+      - run: node scripts/release-watch.mjs

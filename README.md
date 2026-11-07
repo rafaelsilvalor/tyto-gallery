@@ -24,6 +24,8 @@ index; which list a machine trusts is the person's choice.
   (`@tyto/plugin-api`) and fails on any diagnostic, warnings included; checks every entry's tag
   with `git ls-remote`; checks every preview is here. It also runs weekly, because a tag removed
   upstream breaks the index without a commit here.
+- **Release watch** (`.github/workflows/release-watch.yml`): daily, opens one pull request per
+  entry whose repository has a newer `v<major>.<minor>.<patch>` tag; the curator merges it.
 
 ## Entries
 

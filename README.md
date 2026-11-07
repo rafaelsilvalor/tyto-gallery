@@ -31,7 +31,7 @@ index; which list a machine trusts is the person's choice.
 
 | id                  | latest | configurations    |
 | ------------------- | ------ | ----------------- |
-| tabela              | v1.1.1 | roxo              |
+| tabela              | v1.2.0 | roxo              |
 | agenda-semana       | v1.1.0 |                   |
 | aprovados           | v1.1.0 |                   |
 | simulados-semana    | v1.0.1 | roxo, ocre, vinho |

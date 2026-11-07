@@ -8,12 +8,12 @@ entries:
     name: Table
     description: A table in one 1080×1350 image, a title over the whole table, sized so every row fits.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-tabela.git }
-    latest: v1.1.1
+    latest: v1.2.0
     templates: [tabela]
     configurations: [roxo]
     preview: previews/tabela.png
-    engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34, which centres the tracked title, header cells and signature by their ink. The table is unchanged.
+    engine: '>=0.14'
+    changes: Accepts the house seal (selo) on the grid format.
 
   - id: agenda-semana
     kind: template

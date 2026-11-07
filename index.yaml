@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.7.2
+    latest: v0.8.0
     templates: [questao-estrategica, questao-engenharia]
     preview: previews/questao-estrategica.png
-    engine: '>=0.14'
-    changes: Colour marks readable on the dark cover and sign-off (contrast 4.5:1 or more).
+    engine: '>=0.14.3'
+    changes: Draws marks in titulo and fecho set in the frontmatter, with no warning; needs Tyto 0.15.0.
 
   - id: news-da-semana
     kind: template

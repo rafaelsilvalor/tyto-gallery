@@ -65,11 +65,11 @@ entries:
     name: Exam question
     description: One exam question as a 1080×1350 carousel — a cover naming the exam, the statement with its options, the answer and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-questao-estrategica.git }
-    latest: v0.7.1
+    latest: v0.7.2
     templates: [questao-estrategica, questao-engenharia]
     preview: previews/questao-estrategica.png
     engine: '>=0.14'
-    changes: A framed picture's border, bar and rounded corners are one shape, so no light seam shows along the corners in a scaled preview (125 %, 150 %). Exports at 1x change by a few corner pixels.
+    changes: Colour marks readable on the dark cover and sign-off (contrast 4.5:1 or more).
 
   - id: news-da-semana
     kind: template

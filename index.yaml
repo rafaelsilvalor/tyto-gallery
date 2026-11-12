@@ -110,8 +110,8 @@ entries:
     name: Court bulletin
     description: A court bulletin carousel at 1080×1350 — one ruling per slide on a paper card that grows with its words, every section optional, and a back cover.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-informativo.git }
-    latest: v0.2.0
+    latest: v0.3.0
     templates: [informativo]
     preview: previews/informativo.png
     engine: '>=0.14'
-    changes: First release. Each slide's sections (subject, question, answer, source) are fields of their own, all optional; Newsreader and Roboto are fetched from Google Fonts on first use.
+    changes: No line of the question, the answer or the source ends on a one-letter word or on a word of its own, and the question grows a little, never gaining a line, to fill its lines. Briefs written for v0.2.0 draw the same sections.

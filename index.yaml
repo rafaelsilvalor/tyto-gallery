@@ -54,11 +54,11 @@ entries:
     name: Open exams
     description: The week's open exams as a 1080×1350 carousel — a cover, one slide per exam with its facts on a card, and a back cover.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-concursos-abertos.git }
-    latest: v0.3.0
+    latest: v0.3.1
     templates: [concursos-abertos]
     preview: previews/concursos-abertos.png
     engine: '>=0.14'
-    changes: Keeps R$ with its amount and splits each fact at its first colon through the kit; a time like 14:00 no longer breaks a label.
+    changes: Accented capitals on a first line are no longer cut out of the PNG (MONGAGUÁ, FUNDAÇÃO).
 
   - id: questao-estrategica
     kind: template

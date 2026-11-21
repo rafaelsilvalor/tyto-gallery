@@ -115,3 +115,13 @@ entries:
     preview: previews/informativo.png
     engine: '>=0.14'
     changes: The question and the answer pick their size per slide, from 36 to 48 px and from 29 to 36 px, to fill the right of their boxes as far as the card allows; the question's box reaches further right. Briefs written for v0.3.0 draw the same sections.
+
+  - id: psd-decoder
+    kind: plugin
+    name: PSD decoder
+    description: Lets a brief cite a .psd file, or one layer of it (capa.psd#arte), and draws it as a picture; a file saved without maximized compatibility needs a layer named.
+    source: { git: https://github.com/rafaelsilvalor/tyto-plugin-psd.git }
+    latest: v0.1.0
+    preview: previews/psd-decoder.png
+    engine: '>=0.28'
+    changes: First release.

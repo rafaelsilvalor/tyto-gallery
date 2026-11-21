@@ -41,7 +41,10 @@ index; which list a machine trusts is the person's choice.
 | news-da-semana      | v0.3.0 |                   |
 | banner              | v1.1.0 | roxo              |
 | informativo         | v0.4.0 |                   |
+| psd-decoder         | v0.1.0 |                   |
 
-No plugin is listed yet.
+`psd-decoder` is a plugin: a brief cites a `.psd`, or one of its layers (`capa.psd#arte`), and
+draws it as a picture. Its preview is the test template `arte-teste` with its background
+decoded from a PSD's `arte` layer.
 
 Adding or bumping an entry: [CONTRIBUTING.md](CONTRIBUTING.md).

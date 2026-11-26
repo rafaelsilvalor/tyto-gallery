@@ -40,7 +40,7 @@ index; which list a machine trusts is the person's choice.
 | voce-conhece        | v0.6.0 |                   |
 | news-da-semana      | v0.3.0 |                   |
 | banner              | v1.1.0 | roxo              |
-| informativo         | v0.4.0 |                   |
+| informativo         | v0.5.0 |                   |
 | psd-decoder         | v0.1.0 |                   |
 
 `psd-decoder` is a plugin: a brief cites a `.psd`, or one of its layers (`capa.psd#arte`), and

@@ -20,11 +20,11 @@ entries:
     name: Weekly agenda
     description: The week's classes as a carousel — a cover on the first slide, several disciplines to a slide.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-agenda-semana.git }
-    latest: v1.1.0
+    latest: v1.2.0
     templates: [agenda-semana]
     preview: previews/agenda-semana.png
-    engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34, which centres the footer signature by its ink.
+    engine: '>=0.28'
+    changes: v1.2.0 (TYTO-879)
 
   - id: aprovados
     kind: template

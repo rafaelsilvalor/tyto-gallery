@@ -31,11 +31,11 @@ entries:
     name: Approved list
     description: An exam's approved list as a carousel — the exam's name on the first slide, the approved grouped by specialty.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-aprovados.git }
-    latest: v1.1.0
+    latest: v1.2.0
     templates: [aprovados]
     preview: previews/aprovados.png
-    engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34, which centres the footer signature by its ink.
+    engine: '>=0.28'
+    changes: v1.2.0 (TYTO-879)
 
   - id: simulados-semana
     kind: template

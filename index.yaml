@@ -42,12 +42,12 @@ entries:
     name: Weekly mock exams
     description: The week's mock exams as a carousel and as stories — the title, then each day's schedule and its exams.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-simulados-semana.git }
-    latest: v1.0.1
+    latest: v1.1.0
     templates: [simulados-semana]
     configurations: [roxo, ocre, vinho]
     preview: previews/simulados-semana.png
-    engine: '>=0.11'
-    changes: Moves onto Tyto core 0.34. The art is unchanged; the manifest's version now matches the tag.
+    engine: '>=0.28'
+    changes: 'v1.1.0: the call to comment drawn through the kit''s buttonRow (TYTO-880)'
 
   - id: concursos-abertos
     kind: template

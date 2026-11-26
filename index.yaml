@@ -87,11 +87,11 @@ entries:
     name: Do you know the difference
     description: A "do you know the difference" carousel at 1080×1350 — a cover with the question, explanation slides with coloured highlights and pictures among the lines, and a sign-off.
     source: { git: https://github.com/rafaelsilvalor/tyto-template-voce-conhece.git }
-    latest: v0.6.0
+    latest: v0.7.0
     templates: [voce-conhece]
     preview: previews/voce-conhece.png
     engine: '>=0.14'
-    changes: Accepts the house seal (selo) on the grid format.
+    changes: v0.7.0 (TYTO-881)
 
   - id: banner
     kind: template

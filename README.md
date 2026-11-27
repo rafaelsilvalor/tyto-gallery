@@ -38,7 +38,7 @@ index; which list a machine trusts is the person's choice.
 | concursos-abertos   | v0.3.0 |                   |
 | questao-estrategica | v0.8.0 |                   |
 | voce-conhece        | v0.6.0 |                   |
-| news-da-semana      | v0.3.0 |                   |
+| news-da-semana      | v0.4.0 |                   |
 | banner              | v1.1.0 | roxo              |
 | informativo         | v0.4.0 |                   |
 | psd-decoder         | v0.1.0 |                   |
